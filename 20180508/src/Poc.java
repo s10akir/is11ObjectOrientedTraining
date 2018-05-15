@@ -18,7 +18,7 @@ public class Poc {
         int interest = getInterest();
 
         interest += (int) (balance * rate);
-        if (commitInterest(balance)) {
+        if (commitInterest(interest)) {
             System.out.println("done. (" + interest + ")");
         } else {
             System.out.println("failed");
